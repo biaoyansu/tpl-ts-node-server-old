@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodemon index.js"
+    "build": "tsc --build tsconfig.json",
+    "start": "npx nodemon index.ts"
   },
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/node": "^12.6.6"
+  }
 }
